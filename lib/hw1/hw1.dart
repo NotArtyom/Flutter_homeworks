@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Hw1 extends StatefulWidget {
-  Hw1({Key? key}) : super(key: key);
+class HW1 extends StatefulWidget {
+  HW1({Key? key}) : super(key: key);
 
   final String title = "Homework №1";
 
   @override
-  _Hw1State createState() => _Hw1State();
+  _HW1State createState() => _HW1State();
 }
 
-class _Hw1State extends State<Hw1> {
+class _HW1State extends State<HW1> {
   final List<String> _items = ['Hello'];
 
   final TextEditingController _textEditingController = TextEditingController();
