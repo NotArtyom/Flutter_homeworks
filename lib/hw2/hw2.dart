@@ -2,6 +2,7 @@ import 'package:flut_homework/hw2/message_store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 const MY_NAME = "Artem I";
 
@@ -15,13 +16,14 @@ class HW2 extends StatefulWidget {
 }
 
 class _HW2State extends State<HW2> {
-  final MessageStore _messageStore = MessageStore();
+  final MessageStore _messageStore = Modular.get<MessageStore>();
 
   @override
   void initState() {
     super.initState();
     _messageStore.fetchNewMessage();
   }
+
 
   final TextEditingController _textEditingController = TextEditingController();
 
