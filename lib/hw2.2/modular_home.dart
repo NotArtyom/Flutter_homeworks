@@ -15,6 +15,7 @@ class HomeModule extends Module {
           title: 'Homeworks',
         )),
     ModuleRoute('/HW1/', module: HW1Module()),
-    ModuleRoute('/HW2/', module: HW2Module())
+    ModuleRoute('/HW2/', module: HW2Module()),
+    ModuleRoute('/HW3/', module: module)
   ];
 }
